@@ -1,0 +1,1 @@
+{"doc":" 生成数据库实体\n @author ian\n","fields":[{"name":"dbUrl","doc":" 参数\n"},{"name":"ignoreGenFileTypes","doc":" 忽略生成的文件\n"},{"name":"prefix","doc":" table前缀\n"},{"name":"tables","doc":" 要生成的表名\n"}],"enumConstants":[],"methods":[{"name":"main","paramTypes":["java.lang.String[]"],"doc":" 生成方法\n"}]}

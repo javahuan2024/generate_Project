@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yh.dao.gen.EntityAddressGeneratedMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.yh.appobject.EntityAddressAO">
+                    <id column="id" property="id" />
+                    <result column="contact" property="contact" />
+                    <result column="addressDesc" property="addressDesc" />
+                    <result column="postCode" property="postCode" />
+                    <result column="tel" property="tel" />
+                    <result column="createdBy" property="createdBy" />
+                    <result column="creationDate" property="creationDate" />
+                    <result column="modifyBy" property="modifyBy" />
+                    <result column="modifyDate" property="modifyDate" />
+                    <result column="userId" property="userId" />
+        </resultMap>
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+            id, contact, addressDesc, postCode, tel, createdBy, creationDate, modifyBy, modifyDate, userId
+        </sql>
+
+</mapper>

@@ -1,0 +1,1 @@
+{"doc":" <p>\n \n </p>\n\n @author yh\n @since 2024-08-20\n","fields":[{"name":"id","doc":" 主键ID\n"},{"name":"roleCode","doc":" 角色编码\n"},{"name":"roleName","doc":" 角色名称\n"},{"name":"createdBy","doc":" 创建者\n"},{"name":"creationDate","doc":" 创建时间\n"},{"name":"modifyBy","doc":" 修改者\n"},{"name":"modifyDate","doc":" 修改时间\n"}],"enumConstants":[],"methods":[]}

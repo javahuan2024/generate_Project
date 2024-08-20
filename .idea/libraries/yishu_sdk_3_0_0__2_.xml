@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="yishu-sdk-3.0.0 (2)">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/src/main/resources/lib/yishu-sdk-3.0.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/src/main/resources/lib/yishu-sdk-3.0.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/main/resources/lib/yishu-sdk-3.0.0.jar!/" />
+    </SOURCES>
+  </library>
+</component>
