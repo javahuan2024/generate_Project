@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yh.dao.gen.EntityBillGeneratedMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.yh.appobject.EntityBillAO">
+                    <id column="id" property="id" />
+                    <result column="billCode" property="billCode" />
+                    <result column="productName" property="productName" />
+                    <result column="productDesc" property="productDesc" />
+                    <result column="productUnit" property="productUnit" />
+                    <result column="productCount" property="productCount" />
+                    <result column="totalPrice" property="totalPrice" />
+                    <result column="isPayment" property="isPayment" />
+                    <result column="create_user_id" property="createUserId" />
+                    <result column="create_time" property="createTime" />
+                    <result column="modify_user_id" property="modifyUserId" />
+                    <result column="modify_time" property="modifyTime" />
+                    <result column="providerId" property="providerId" />
+                    <result column="is_valid" property="isValid" />
+        </resultMap>
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+            id, billCode, productName, productDesc, productUnit, productCount, totalPrice, isPayment, create_user_id, create_time, modify_user_id, modify_time, providerId, is_valid
+        </sql>
+
+</mapper>

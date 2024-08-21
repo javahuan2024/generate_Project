@@ -1,0 +1,1 @@
+{"doc":" 附件关联类型\n","fields":[{"name":"USER_HEAD","doc":" 用户头像\n"},{"name":"LEVEL_RESULT_PIC","doc":" 定级结果\n"},{"name":"LEVEL_CONTAINERS_RESULT_PIC","doc":" 容器定级结果\n"},{"name":"SELF_LEVEL_PIC","doc":" 花卉定级图片(自评)\n"},{"name":"SCAN_PIC","doc":" 扫描图片\n"},{"name":"EXPRESS_DELIVERY_INFORMATION","doc":" 快递发货信息图片\n"}],"enumConstants":[],"methods":[]}

@@ -1,0 +1,1 @@
+{"doc":" 用户类型\n","fields":[{"name":"MANAGE_USER","doc":" 运营平台用户\n"},{"name":"INSTITUTION_USER","doc":" 机构平台用户\n"}],"enumConstants":[],"methods":[]}

@@ -1,6 +1,5 @@
 package com.yh.utils;
 
-
 import com.yh.appobject.EntityUserAO;
 import com.yh.common.define.StaticDefine;
 import lombok.extern.slf4j.Slf4j;

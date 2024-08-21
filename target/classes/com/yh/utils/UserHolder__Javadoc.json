@@ -1,0 +1,1 @@
+{"doc":" 获取回话中的用户\n @author chris\n","fields":[{"name":"ADMIN_AUTH_CODE","doc":" 管理员CODE\n"}],"enumConstants":[],"methods":[{"name":"getSecurityUser","paramTypes":[],"doc":" 获取pc端用户<br>\n 获取用户失败将返回空\n @return\n"}]}

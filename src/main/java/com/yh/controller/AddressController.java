@@ -1,10 +1,10 @@
-package ${(controllerPackage)!};
+package com.yh.controller;
 
-import ${paramPackage};
-import ${aoPackage};
-import ${servicePackage};
-import ${packageFix}.utils.UserHolder;
-import ${packageFix}.appobject.EntityUserAO;
+import com.yh.vo.param.AddressParam;
+import com.yh.appobject.EntityAddressAO;
+import com.yh.service.AddressService;
+import com.yh.utils.UserHolder;
+import com.yh.appobject.EntityUserAO;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.yh.common.ServiceResult;
 import com.yh.common.utils.ResultMap;
@@ -24,20 +24,20 @@ import java.util.List;
 import java.util.Map;
 
 /**
-* ${table.comment!}controller
+* controller
 *
-* @author ${author}
-* @since ${date}
+* @author yh
+* @since Aug 21, 2024
 */
 @RestController
-@RequestMapping(value = "/pc/manage/${path}")
-public class ${(controllerObjName)!} {
+@RequestMapping(value = "/pc/manage/address")
+public class AddressController {
 
     /**
     * 服务对象
     */
     @Resource
-    private ${(objName)!}Service serv;
+    private AddressService serv;
 
     /**
     * userHolder
@@ -47,13 +47,13 @@ public class ${(controllerObjName)!} {
 
 
     /**
-    * 新增${table.comment}
+    * 新增
     * @param param 参数
     * @return 是否成功
     */
     @PostMapping(value = "add")
-    public ServiceResult<Entity${(objName)!}AO> add(@RequestBody @Validated(${(objName)!}Param.add.class) ${(objName)!}Param param){
-        Entity${(objName)!}AO ao = new Entity${(objName)!}AO();
+    public ServiceResult<EntityAddressAO> add(@RequestBody @Validated(AddressParam.add.class) AddressParam param){
+        EntityAddressAO ao = new EntityAddressAO();
         BeanUtil.copyProperties(param,ao);
 
         //用户信息获取 设置创建人
@@ -63,13 +63,13 @@ public class ${(controllerObjName)!} {
     }
 
     /**
-    * 更新${table.comment}
+    * 更新
     * @param param 参数
     * @return 是否成功
     */
     @PostMapping(value = "updated")
-    public ServiceResult<Entity${(objName)!}AO> updated(@RequestBody @Validated(${(objName)!}Param.edit.class) ${(objName)!}Param param){
-        Entity${(objName)!}AO ao = new Entity${(objName)!}AO();
+    public ServiceResult<EntityAddressAO> updated(@RequestBody @Validated(AddressParam.edit.class) AddressParam param){
+        EntityAddressAO ao = new EntityAddressAO();
         BeanUtil.copyProperties(param,ao);
 
         //用户信息获取 设置更新人
@@ -84,7 +84,7 @@ public class ${(controllerObjName)!} {
     * @return 是否成功
     */
     @PostMapping(value = "deleted")
-    public ServiceResult<Boolean> deleted(@RequestBody @Validated(${(objName)!}Param.delete.class) ${(objName)!}Param param){
+    public ServiceResult<Boolean> deleted(@RequestBody @Validated(AddressParam.delete.class) AddressParam param){
         //用户信息获取 设置更新人
         EntityUserAO user = userHolder.getManageUser();
         return serv.delete(param.getId(), user.getId());
@@ -96,7 +96,7 @@ public class ${(controllerObjName)!} {
     * @return 详情
     */
     @PostMapping(value = "detail")
-    public ServiceResult<Entity${(objName)!}AO> detail(@RequestBody @Validated(${(objName)!}Param.detail.class) ${(objName)!}Param param){
+    public ServiceResult<EntityAddressAO> detail(@RequestBody @Validated(AddressParam.detail.class) AddressParam param){
         return serv.getValidById(param.getId());
     }
 
@@ -107,7 +107,7 @@ public class ${(controllerObjName)!} {
     * @return 是否成功
     */
     @PostMapping("/listAll")
-    public ServiceResult<List<Entity${(objName)!}AO>> listAll(@RequestBody Map<String, Object> params) {
+    public ServiceResult<List<EntityAddressAO>> listAll(@RequestBody Map<String, Object> params) {
        return serv.list(params);
     }
 
@@ -117,7 +117,7 @@ public class ${(controllerObjName)!} {
     * @return 是否成功
     */
     @PostMapping("/list")
-    public ServiceResult<Page<Entity${(objName)!}AO>> list(@RequestBody Map<String, Object> params) {
+    public ServiceResult<Page<EntityAddressAO>> list(@RequestBody Map<String, Object> params) {
         return serv.page(params);
     }
 }

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yh.dao.gen.EntityProviderGeneratedMapper">
+
+        <!-- 通用查询映射结果 -->
+        <resultMap id="BaseResultMap" type="com.yh.appobject.EntityProviderAO">
+                    <id column="id" property="id" />
+                    <result column="proCode" property="proCode" />
+                    <result column="proName" property="proName" />
+                    <result column="proDesc" property="proDesc" />
+                    <result column="proContact" property="proContact" />
+                    <result column="proPhone" property="proPhone" />
+                    <result column="proAddress" property="proAddress" />
+                    <result column="proFax" property="proFax" />
+                    <result column="create_user_id" property="createUserId" />
+                    <result column="create_time" property="createTime" />
+                    <result column="modify_user_id" property="modifyUserId" />
+                    <result column="modify_time" property="modifyTime" />
+                    <result column="is_valid" property="isValid" />
+        </resultMap>
+
+        <!-- 通用查询结果列 -->
+        <sql id="Base_Column_List">
+            id, proCode, proName, proDesc, proContact, proPhone, proAddress, proFax, create_user_id, create_time, modify_user_id, modify_time, is_valid
+        </sql>
+
+</mapper>

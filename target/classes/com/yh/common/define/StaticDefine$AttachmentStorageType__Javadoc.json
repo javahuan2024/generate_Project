@@ -1,0 +1,1 @@
+{"doc":" 附件存储类型\n","fields":[{"name":"LOCAL","doc":" 本地磁盘存储\n"},{"name":"OSS","doc":" 阿里云OSS\n"}],"enumConstants":[],"methods":[]}
